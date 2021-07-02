@@ -1,1 +1,2 @@
-# c41-1-M
+# synchronousBallMovement
+Ball moving synchronously
