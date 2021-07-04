@@ -33,6 +33,6 @@ if(countRef.exists()){
         textSize(30)
         text ("game start", 200, 200)
 
-        game.getInfoPlayer()
+        player.getInfoPlayer()
     }
 }
