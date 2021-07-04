@@ -26,7 +26,7 @@ class Player{
 
    getInfoPlayer(){
 
-    database.ref('players').on("values",(data)=>{
+    database.ref('players').on("value",(data)=>{
 
         allPlayers= data.val()
     })
