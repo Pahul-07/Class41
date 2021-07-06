@@ -33,6 +33,28 @@ if(countRef.exists()){
         textSize(30)
         text ("game start", 200, 200)
 
-        player.getInfoPlayer()
+        player.getInfoPlayer();
+
+        if(keyIsDown(UP_ARROW)){
+            player.distance+=50;
+            player.update();
+        }
+       console.log(allPlayers);
+        if(allPlayers !==undefined){
+        var newY;
+        for(var plr in allPlayers){
+
+            if(plr === "player" + player.index){
+                fill("red");
+            }
+            else{
+                fill("skyBlue");
+            }
+
+            text(allPlayers[plr].name + ";" + allPlayers[plr].distance ,120, newY);
+            newY+=50
+            console.log("yes")
+        }
     }
+}
 }
